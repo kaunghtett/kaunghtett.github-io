@@ -1,253 +1,250 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        secondary: "#F2F2F2",
-                        aquaLight: "#ADD8E6",
-                    },
-                },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#F2F2F2",
+              aquaLight: "#ADD8E6",
             },
-        };
+          },
+        },
+      };
     </script>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: "Playfair Display", serif;
-        }
-        .hero {
-            clip-path: polygon(0 0, 100% 0, 100% 65%, 0 85%);
-        }
-        .text-o-50 {
-            opacity: 50%;
-        }
-        .circle {
-            width: 100%;
-            height: 100%;
-            border-radius: 100%;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Playfair Display", serif;
+      }
+      .hero {
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 0 85%);
+      }
+      .text-o-50 {
+        opacity: 50%;
+      }
+      .circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <section class="bg-black min-h-screen text-white">
-        
-        <div class="w-full py-5 mx-auto">
-            <navbar
-            class="flex fixed w-full px-5 bg-black top-0 font-[600] justify-between py-5"
-            >
-            <div class="uppercase">
-                <a href="https://www.linkedin.com/in/min-kaung-htet-567920151">
-                    hire me
-                </a>
-            </div>
-            <a href="https://github.com/kaunghtett">
-                <i class="fa-brands fa-github fa-2x"></i>
-            </a>
-            <!-- <div class=""><i class="fa-solid fa-bars text-3xl"></i></div>
-                <i class="fa-solid fa-xmark hidden"></i> -->
-            </navbar>
-        </div>
-        
-        <div class="max-w-[100%] md:max-w-[100%] flex justify-center items-center">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_wdhfjhyc.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
-        </div>
-        <div
-        class="max-w-[90%] md:max-w-[40%] mx-auto flex justify-center items-center"
+      <div class="w-full py-5 mx-auto">
+        <navbar
+          class="flex fixed w-full px-5 bg-black top-0 font-[600] justify-between py-5"
         >
-        
-        
+          <div class="uppercase">
+            <a href="https://www.linkedin.com/in/min-kaung-htet-567920151">
+              hire me
+            </a>
+          </div>
+          <a href="https://github.com/kaunghtett">
+            <i class="fa-brands fa-github fa-2x"></i>
+          </a>
+          <!-- <div class=""><i class="fa-solid fa-bars text-3xl"></i></div>
+                <i class="fa-solid fa-xmark hidden"></i> -->
+        </navbar>
+      </div>
+
+      <div
+        class="max-w-[100%] md:max-w-[100%] flex justify-center items-center"
+      >
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_wdhfjhyc.json"
+          background="transparent"
+          speed="1"
+          style="width: 500px; height: 500px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div
+        class="max-w-[90%] md:max-w-[40%] mx-auto flex justify-center items-center"
+      >
         <div class="text-center">
-            
-            <p
+          <p
             class="text-3xl font-bold py-5 wow animate__animated animate__flipInX"
-            >
+          >
             Hello I'm <br class="md:hidden block" />
             Min Kaung Htet.
-        </p>
-        <p class="text-lg wow animate__animated animate__fadeInUpBig">
-            I have over 4 years of experience in the Web Development Field. I am
+          </p>
+          <p class="text-lg wow animate__animated animate__fadeInUpBig">
+            I have over 5 years of experience in the Web Development Field. I am
             currently working as a Full-Stack Web Developer at Greenovator
             Company. My current tech stacks are PHP ( Laravel) , Node Js, Vue
             Js, React Js, MySQL and NoSql.
-        </p>
-    </div>
-</div>
-</section>
-<section class="bg-secondary hidden py-10">
-    <div
-    class="max-w-[90%] mx-auto flex flex-col md:flex-row justify-around leading-7"
-    >
-    <div class="pr-5 text-right font-bold">
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            porro error distinctio accusamus perferendis odio, temporibus
-            quidem, nulla expedita id earum assumenda ab animi natus.
-        </p>
-    </div>
-    <div class="pr-5">
-        <p class="pb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex
-            adipisci officia quis eligendi ut ea at, omnis saepe! Saepe ipsa
-            consectetur similique? Iusto, ipsum? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Labore placeat vero suscipit quisquam.
-            Iste animi delectus eos repellendus dolor velit eius mollitia
-            blanditiis deserunt ipsum.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex
-            adipisci officia quis eligendi ut ea at, omnis saepe! Saepe ipsa
-            consectetur similique? Iusto, ipsum? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Labore placeat vero suscipit quisquam.
-            Iste animi delectus eos repellendus dolor velit eius mollitia
-            blanditiis deserunt ipsum.
-        </p>
-    </div>
-    <div class="pr-5">
-        <p class="pb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex
-            adipisci officia quis eligendi ut ea at, omnis saepe! Saepe ipsa
-            consectetur similique? Iusto, ipsum? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Labore placeat vero suscipit quisquam.
-            Iste animi delectus eos repellendus dolor velit eius mollitia
-            blanditiis deserunt ipsum. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Error ex adipisci officia quis eligendi ut ea at,
-            omnis saepe! Saepe ipsa consectetur similique?
-        </p>
-        <p>
-            Iusto, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Labore placeat vero suscipit quisquam. Iste animi delectus eos
-            repellendus dolor velit eius mollitia blanditiis deserunt ipsum.
-        </p>
-    </div>
-</div>
-</section>
-<section class="bg-secondary py-10">
-    <p
-    class="title underline text-3xl text-center mb-10 wow animate__animated animate__heartBeat"
-    >
-    WORK EXPERIENCES
-</p>
-<div
-class="max-w-[35%] mx-auto flex flex-col  text-center justify-between items-center"
->
-<div class="wow animate__animated animate__fadeInLeft">
-    <div class="font-bold py-5">
-        <p class="text-xl">MM Digital Solutions</p>
-        <p class="text-sm">Fullstack Developer</p>
-    </div>
-    <div class="font-bold py-5">
-        <p class="text-xl">The Mighty Myanmar</p>
-        <p class="text-sm">Junior Web Developer</p>
-    </div>
-</div>
-<div class="wow animate__animated animate__fadeInRight">
-    <div class="font-bold py-5">
-        <p class="text-xl">Greenovator</p>
-        <p class="text-sm">Fullstack Developer</p>
-    </div>
-</div>
-</div>
-</section>
-<section class="mt-10 py-10">
-    <div
-    class="max-w-[80%] wow animate__animated animate__fadeIn md:max-w-[55%] mx-auto text-center"
-    >
-    <div class="text-3xl underline mb-10">CAREER OBJECTIVE</div>
-    <div>
-        <p class="mb-10 font-[500]">
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-secondary hidden py-10">
+      <div
+        class="max-w-[90%] mx-auto flex flex-col md:flex-row justify-around leading-7"
+      >
+        <div class="pr-5 text-right font-bold"></div>
+        <div class="pr-5"></div>
+        <div class="pr-5"></div>
+      </div>
+    </section>
+    <section class="bg-secondary py-10">
+      <p
+        class="title underline text-3xl text-center mb-10 wow animate__animated animate__heartBeat"
+      >
+        WORK EXPERIENCES
+      </p>
+      <div
+        class="max-w-[35%] mx-auto flex flex-col text-center justify-between items-center"
+      >
+        <div class="wow animate__animated animate__fadeInLeft">
+          <div class="font-bold py-5">
+            <p class="text-xl">Greenovator</p>
+            <p class="text-sm">Senior Fullstack Developer</p>
+          </div>
+          <div class="font-bold py-5">
+            <p class="text-xl">uab background</p>
+            <p class="text-sm">PHP Web Developer</p>
+          </div>
+          <div class="font-bold py-5">
+            <p class="text-xl">MM Digital Solutions</p>
+            <p class="text-sm">Fullstack Developer</p>
+          </div>
+        </div>
+        <div class="wow animate__animated animate__fadeInRight">
+          <div class="font-bold py-5">
+            <p class="text-xl">The Mighty Myanmar</p>
+            <p class="text-sm">Junior Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10 py-10">
+      <div class="max-w-[80%] mx-auto text-center">
+          <p class="text-3xl font-extrabold tracking-widest mb-10">TECH STACKS</p>
+          <div class="flex flex-col md:flex-row justify-around">
+              <div class="mb-10 md:mb-0">
+                  <p class="text-2xl font-bold underline mb-5">Frontend</p>
+                  <p>Vue.js</p>
+                  <p>React.js</p>
+              </div>
+              <div class="mb-10 md:mb-0">
+                  <p class="text-2xl font-bold underline mb-5">Backend</p>
+                  <p>PHP (Laravel)</p>
+                  <p>Node.js</p>
+                  <p>Nest Js</p>
+                  <p>MySQL</p>
+                  <p>NoSQL</p>
+              </div>
+              <div>
+                  <p class="text-2xl font-bold underline mb-5">DevOps</p>
+                  <p>Digital Ocean</p>
+                  <p>AWS</p>
+                  <p>S3</p>
+                  <p>Elastic Search</p>
+              </div>
+          </div>
+      </div>
+  </section>
+    <section class="mt-10 py-10">
+      <div
+        class="max-w-[80%] wow animate__animated animate__fadeIn md:max-w-[55%] mx-auto text-center"
+      >
+        <div class="text-3xl underline mb-10">CAREER OBJECTIVE</div>
+        <div>
+          <p class="mb-10 font-[500]">
             A resourceful individual with a proven track record in implementing
             successful web projects. Seeking the role of Full-Stack Developer at
-            Greenovator to utilise my 4 years of web development experience in
+            Greenovator to utilise my 5 years of web development experience in
             developing projects through multiple techniques and problem solving
             skills for the growth of the organisation as well as to enhance my
             knowledge about new and emerging trends in the IT sector.
-        </p>
-        <button
-        class="tracking-wider font-bold border-2 border-black px-5 py-3"
-        >
-        <a href="https://www.linkedin.com/in/min-kaung-htet-567920151">
-            HIRE ME
-        </a>
-    </button>
-</div>
-</div>
-</section>
-<section class="mt-10 py-10">
-    <div class="max-w-[50%] mx-auto text-center">
+          </p>
+          <button
+            class="tracking-wider font-bold border-2 border-black px-5 py-3"
+          >
+            <a href="https://www.linkedin.com/in/min-kaung-htet-567920151">
+              HIRE ME
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10 py-10">
+      <div class="max-w-[50%] mx-auto text-center">
         <p class="text-3xl font-extrabold tracking-widest">CONTACT</p>
         <div class="mt-10 font-bold">
-            <a class="mb-10" href="email:minkaunghtet.tech@gamil.com">
-                minkaunghtet.tech@gamil.com
-            </a>
-            <a
+          <a class="mb-10" href="email:minkaunghtet.tech@gamil.com">
+            minkaunghtet.tech@gamil.com
+          </a>
+          <a
             href="phone:+660970137635
             "
-            >
+          >
             <p>+66 0970 137 635</p>
-        </a>
-    </div>
-    <div class="icons flex justify-center items-center mt-5 text-3xl">
-        <a href="https://www.linkedin.com/in/min-kaung-htet-567920151">
+          </a>
+        </div>
+        <div class="icons flex justify-center items-center mt-5 text-3xl">
+          <a href="https://www.linkedin.com/in/min-kaung-htet-567920151">
             <i class="fa-brands fa-linkedin mr-5"></i>
-        </a>
-        <a href="https://github.com/kaunghtett">
+          </a>
+          <a href="https://github.com/kaunghtett">
             <i class="fa-brands fa-github"></i>
-        </a>
-    </div>
-</div>
-</section>
-<footer class="py-5 text-o-50 text-sm text-center">minkaunghtet</footer>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="py-5 text-o-50 text-sm text-center">minkaunghtet</footer>
 
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js"
-integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA=="
-crossorigin="anonymous"
-referrerpolicy="no-referrer"
-></script>
-<script>
-    new WOW().init();
-</script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js"
+      integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
